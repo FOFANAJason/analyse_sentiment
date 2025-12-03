@@ -64,12 +64,13 @@ if 'label' in df.columns:
 # ==============================
 #   ONGLET : PREDICTION
 # ==============================
-tab1, tab2, tab3, tab4, tab5 = st.tabs([
+tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs([
     " Prédiction",
     " Aperçu du Dataset",
     " Distribution des Sentiments",
     " Nuage de Mots",
-    " Analyse par Mots-Clés"
+    " Analyse par Mots-Clés",
+    " À Propos"
 ])
 
 # ------ ONGLET 1 : PREDICTION ------
@@ -201,3 +202,83 @@ with tab5:
         )
 
         st.dataframe(resultats_style, use_container_width=True)
+
+
+# ------ ONGLET 6 : À PROPOS ------
+with tab6:
+    st.write("## À Propos de ce Projet")
+    
+    st.markdown("""
+    ### Présentation du Projet
+    Cette application est dédiée à l'**analyse de sentiments** basée sur des avis de voyageurs 
+    (notamment TripAdvisor). Elle utilise des modèles de traitement du langage naturel (NLP) 
+    pour classifier automatiquement les avis en deux catégories : **POSITIF** ou **NÉGATIF**.
+    
+    ---
+    
+    ### 👥 Équipe du Projet
+    
+    - **Jason FOFANA**
+    - **Emmanuel DJEDJE**
+    - **Christelle YAKE**
+                
+    ---
+    
+    ### Technologies Utilisées
+    
+    - **Python 3.10** - Langage de programmation principal
+    - **Streamlit** - Framework pour la création de l'interface web
+    - **Pandas** - Manipulation et analyse des données
+    - **Transformers (HuggingFace)** - Modèles de deep learning pré-entraînés
+    - **Matplotlib & Seaborn** - Visualisation des données
+    - **WordCloud** - Génération de nuages de mots
+    - **Git** - Gestion de version
+    
+    ---
+    
+    ### Fonctionnalités Principales
+    
+    1. **Prédiction** - Analysez le sentiment d'un texte en temps réel
+    2. **Aperçu du Dataset** - Consultez les statistiques des données
+    3. **Distribution des Sentiments** - Visualisez la répartition des sentiments positifs/négatifs
+    4. **Nuage de Mots** - Découvrez les mots les plus fréquents dans les avis
+    5. **Analyse par Mots-Clés** - Recherchez et analysez les avis contenant des termes spécifiques
+    
+    ---
+    
+    ### Sources des Données
+    
+    Les données utilisées proviennent de :
+    - **TripAdvisor** - Avis de voyageurs sur des hôtels et destinations grâce au **web scraping**
+    - Nettoyage et prétraitement des textes pour optimiser l'analyse
+    
+    ---
+    
+    ### Améliorations Futures
+    
+    - [ ] Ajout de modèles multilingues
+    - [ ] Analyse des émotions (au-delà du positif/négatif)
+    - [ ] Export des résultats en format PDF/Excel
+    - [ ] Dashboard avec métriques en temps réel
+    - [ ] API REST pour intégration externe
+    
+    ---
+    
+    ### Contact
+    
+    - **Email** : Pour toute question ou suggestion, n'hésitez pas à nous contacter
+        à l'adresse : `fofanajason4@gmail.com`
+                    `emmanueldjedje57@gmail.com`
+                    `ychristellerebecca@gmail.com`
+    
+    ---
+    
+    ### 📝 Licence
+    Ce projet est disponible sous licence MIT. Vous êtes libre de l'utiliser, de le modifier 
+    et de le distribuer selon les termes de cette licence.
+    
+    """)
+    
+    st.markdown("---")
+    st.markdown("<p style='text-align: center; color: gray;'>Merci de votre intérêt pour ce projet ! 🙏</p>", 
+                unsafe_allow_html=True)
