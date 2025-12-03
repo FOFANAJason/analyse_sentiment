@@ -267,9 +267,11 @@ with tab6:
     ### Contact
     
     - **Email** : Pour toute question ou suggestion, n'hésitez pas à nous contacter
-        à l'adresse : `fofanajason4@gmail.com`
-                    `emmanueldjedje57@gmail.com`
-                    `ychristellerebecca@gmail.com`
+    
+        à l'adresse : 
+        - [ ] `fofanajason4@gmail.com`
+        - [ ] `emmanueldjedje57@gmail.com`
+        - [ ] `ychristellerebecca@gmail.com`
     
     ---
     
