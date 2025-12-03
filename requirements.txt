@@ -34,3 +34,4 @@ torchaudio==2.2.0
 streamlit==1.51.0
 
 wordcloud==1.9.4
+sentencepiece==0.2.1
